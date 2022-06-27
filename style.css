@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #C2DED1;
+}
+
+li, a {
+  text-decoration: none;
+  font-weight: 500;
+  list-style: none;
+  color: #354259;
+}
+
+aside {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+section {
+  border-radius: 12px;
+}
+
+.content-about {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.food-menu {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.chef {
+  margin-bottom: 25px;
+}
+
+.chef-img {
+  margin-top: 15px;
+}
+
+main img {
+  width: 300px;
+}
+
+.about .featured-images {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about p {
+  text-align: left;
+}
+
+.main-content {
+  flex: 4;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.main-content img {
+  width: 200px;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+  margin-left: 10px;
+}
+
+.sidebar img {
+  width: 200px;
+}
+
+aside {
+  text-align: center;
+}
+
+.food-menu {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.food {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.food.nasigoreng {
+  background-color: #F4BFBF;
+}
+
+.food.sate {
+  background-color: #8CC0DE;
+}
+
+.food.escampur {
+  background-color: #FFD9C0;
+}
+
+.chef {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chef-img {
+  width: 50%;
+}
+
+.chef-img img {
+  width: 100%;
+}
+
+.chef-img p {
+  text-align: center;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #354259;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: #ECE5C7;
+}
+
+header {
+  width: 100%;
+  background-color: #ECE5C7;
+  display: flex;
+  padding: 10px 10%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.menu {
+  display: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  display: block;
+}
+
+.nav-links li a:hover {
+  color: #F24A72;
+  transform: rotate(6deg);
+}
+
+button:hover {
+  background-color: #F24A72;
+}
+
+.jumbotron {
+  background-color: #FAF0D7;
+  padding: 60px 45px;
+  display: flex;
+  justify-content: center;
+  height: 320px;
+}
+
+.jumbotron-inner {
+  max-width: 750px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.jumbotron-inner h1 {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+
+.jumbotron-inner p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn button {
+  background-color: #354259;
+  margin-top: 15px;
+}
+
+.btn button:hover {
+  background-color: #F24A72;
+}
+
+.profile {
+  background-color: #354259;
+  color: #ECE5C7;
+}
+
+.profile img {
+  width: 200px;
+  text-align: center;
+}
+
+.profile h2, p, figcaption, figure {
+  text-align: center;
+}
+
+
+footer {
+  background: #ECE5C7;
+  padding: 20px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+}
+
+@media (min-width: 900px) {
+  .flex-container {
+    display: flex; 
+  }
+}
+
+/* Mobile view overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ECE5C7;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.content-overlay {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 26px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover {
+  color: #F24A72;
+  transform: rotate(6deg);
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+
+@media (min-width: 600px) {
+  .food-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .food {
+    width: 30%;
+  }
+
+  .chef-img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+

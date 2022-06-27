@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tugas Akhir Belajar Dasar Pemrograman Web</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<header>
+		<img class="logo" src="images/logo.png" alt="logo">
+		<nav>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#foodMenu">Food Menu</a></li>
+				<li><a href="#chef">Chef</a></li>
+			</ul>
+		</nav>
+		<a onclick="navOpen()" class="menu" href="#"><button>Menu</button></a>
+	</header>
+	<div id="menu-mobile" class="overlay">
+		<a class="close" onclick="navClose()">&times;</a>
+		<div class="content-overlay">
+			<a href="#about">About</a>
+			<a href="#foodMenu">Food Menu</a>
+			<a href="#chef">Chef</a>
+		</div>
+	</div>
+
+	<main>
+		<div class="jumbotron">
+			<article class="jumbotron-inner">
+				<h1>Welcome To Whillys Resto</h1>
+				<p>Come for the FOOD, Stay for the FUN</p>
+				<a class="btn" href="#about"><button>Our About</button></a>
+			</article>
+		</div>
+
+		<div class="flex-container">
+
+			<div class="main-content card">
+				<h2>About</h2>
+				<div class="content-about">
+					<article id="about" class="about">
+						<img src="images/tentang-kami.jpg" class="featured-images" alt="about">
+						<p>Whillys resto berdiri sejak tahun 2015 dengan mengusung tema bernuansa putih dan hijau dari dedaunan yang ada di sepanjang pojok-pojok resto, dan resto ini menyediakan beberapa menu makanan lokal Indonesia, dan yang mengelola semua makanan dan minuman di Resto Whillys ini adalah Chef terkenal</p>
+					</article>
+				</div>
+
+				<h2>Food Menu</h2>
+				<article id="foodMenu" class="food-menu">
+					<section class="food nasigoreng">
+						<img src="images/nasgor.png" alt="nasi goreng">
+						<h4>Nasi Goreng</h4>
+						<p>Rp. 22.000,-</p>
+					</section>
+					<section class="food sate">
+						<img src="images/sate.png" alt="sate">
+						<h4>Sate Ayam</h4>
+						<p>Rp. 35.000,-</p>
+					</section>
+					<section class="food escampur">
+						<img src="images/es.png" alt="es campur">
+						<h4>ES Campur</h4>
+						<p>Rp. 15.000,-</p>
+					</section>
+				</article>
+
+				<h2>Chef</h2>
+				<article id="chef" class="chef"> 
+					<section class="chef-img">
+						<img src="images/hansel.png" alt="chef hansel">
+						<p>Chef Hansel</p>
+					</section>
+					<section class="chef-img">
+						<img src="images/jonathan.png" alt="chef jonathan">
+						<p>Chef Jonathan</p>
+					</section>
+					<section class="chef-img">
+						<img src="images/louise.png" alt="chef louise">
+						<p>Chef Louise</p>
+					</section>
+					<section class="chef-img">
+						<img src="images/ronan.png" alt="chef ronan">
+						<p>Chef Ronan</p>
+					</section>
+					<section class="chef-img">
+						<img src="images/charlie.png" alt="chef charlie">
+						<p>Chef Charlie</p>
+					</section>
+					<section class="chef-img">
+						<img src="images/sebastian.png" alt="chef sebastian">
+						<p>Chef Sebastian</p>
+					</section>
+				</article>
+			</div>
+
+			<aside class="sidebar">
+				<h2>Profile</h2>
+				<img src="images/profile.png" alt="profile">
+				<p>William Philips</p>
+			</aside>
+		</div>
+
+	</main>
+
+	<footer>
+		<p>Whillys Resto &#169, 2022</p>
+	</footer>
+	
+<script src="scripts.js"></script>
+</body>
+</html>
